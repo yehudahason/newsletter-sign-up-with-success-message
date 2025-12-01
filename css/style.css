@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --Red: hsl(4, 100%, 67%);
+
+  --Blue800: hsl(234, 29%, 20%);
+  --Blue700: hsl(235, 18%, 26%);
+  --Grey: hsl(0, 0%, 58%);
+  --White: hsl(0, 0%, 100%);
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Blue700);
+  min-height: 100vh;
+}
+/* Mobile First */
+.container {
+  width: 100%;
+  height: 100vh;
+  /* padding: 1.8rem; */
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.img-div {
+  width: 100%;
+  height: 400px;
+}
+
+.imgsrc {
+  content: url("../assets/images/illustration-sign-up-mobile.svg");
+  width: 100%;
+  height: min(400px, 100%);
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.8rem;
+  align-items: flex-start;
+  padding: 1.2rem 2rem;
+}
+/* Tablet */
+@media (min-width: 610px) and (max-width: 1100px) {
+  .container {
+    width: 608px;
+    height: 878px;
+    padding: 40px;
+  }
+  .img-div {
+    width: 528px;
+  }
+  .imgsrc {
+    content: url("../assets/images/illustration-sign-up-tablet.svg");
+    object-fit: cover;
+  }
+  .content {
+    padding: 1rem;
+  }
+}
+/* Desktop */
+@media (min-width: 1100px) {
+  .container {
+    width: 904px;
+    height: 641px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* padding-right: 0; */
+    padding: 40px;
+  }
+  .img-div {
+    /* width: 593px; */
+    height: 100%;
+  }
+  .imgsrc {
+    content: url("../assets/images/illustration-sign-up-desktop.svg");
+    height: 100%;
+    /* width: 452px; */
+    object-fit: cover;
+  }
+  .content {
+    padding: 1rem;
+  }
+}
