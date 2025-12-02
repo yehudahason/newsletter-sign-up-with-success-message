@@ -29,17 +29,16 @@ body {
   background-color: var(--Blue700);
   min-height: 100vh;
 }
+
 /* Mobile First */
 .container {
   width: 100%;
   height: 100vh;
-  /* padding: 1.8rem; */
   background-color: var(--White);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border-radius: 0.8rem; */
   overflow-x: hidden;
   gap: 1.2rem;
 }
@@ -171,18 +170,15 @@ form button:hover {
     height: 641px;
     flex-direction: row-reverse;
     justify-content: space-between;
-    /* padding-right: 0; */
     padding: 40px;
     border-radius: 0.8rem;
   }
   .img-div {
-    /* width: 593px; */
     height: 100%;
   }
   .imgsrc {
     content: url("../assets/images/illustration-sign-up-desktop.svg");
     height: 100%;
-    /* width: 452px; */
     object-fit: cover;
   }
   .content {
