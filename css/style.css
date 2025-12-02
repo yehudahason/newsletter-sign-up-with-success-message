@@ -99,7 +99,7 @@ form .input label {
 }
 .valid {
   color: var(--Red);
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 .input {
   display: flex;

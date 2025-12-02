@@ -1,5 +1,7 @@
 const form = document.getElementById("form");
 const email = document.getElementById("email");
+const input = document.getElementById("input");
+const valid = document.getElementById("valid");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -7,9 +9,12 @@ form.addEventListener("submit", (e) => {
   const result = emailIsValid(email.value);
 
   if (result) {
-    console.log(result);
+    window.location.href = "../success.html";
+    input.classList.remove("alert");
+    valid.style.visibility = "hidden";
   } else {
-    console.log("bad email");
+    input.classList.add("alert");
+    valid.style.visibility = "visible";
   }
 });
 
