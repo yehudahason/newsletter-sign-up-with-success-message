@@ -98,6 +98,7 @@ form .input label {
   color: var(--Blue800);
   display: flex;
   justify-content: space-between;
+  width: 90%;
 }
 .valid {
   color: var(--Red);
