@@ -30,7 +30,7 @@ body {
   background-color: var(--Blue700);
 }
 /* Mobile First */
-.container {
+.main {
   width: 100%;
   height: 100vh;
   background-color: var(--White);
@@ -43,19 +43,19 @@ body {
   padding: 5rem 2rem;
   overflow-x: hidden;
 }
-.container img {
+.main img {
   margin-top: 3rem;
   height: 50px;
 }
 
-.container h1 {
+.main h1 {
   font: var(--txt-1m);
 }
 
 p span.email {
   font: var(--txt-2b);
 }
-button {
+.dis-btn {
   background-color: var(--Blue800);
   color: white;
   width: 100%;
@@ -67,23 +67,23 @@ button {
   margin-top: auto;
 }
 
-button:focus {
+.dis-btn:focus {
   background: linear-gradient(to right, #ff6a3a, #ff527b);
   box-shadow: 4px 7px 9px rgba(255, 98, 87, 0.5);
 }
 /* Greatet Then Mobile */
 @media (min-width: 608px) {
-  .container {
+  .main {
     width: 504px;
     height: 520px;
     padding: 4rem;
     justify-content: center;
     border-radius: 9px;
   }
-  .container h1 {
+  .main h1 {
     font: var(--txt-1);
   }
-  .container img {
+  .main img {
     margin-top: 1rem;
     height: 50px;
   }

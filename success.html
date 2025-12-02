@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Succes Page</title>
     <link rel="stylesheet" href="./css/style2.css" />
+    <script defer>
+      document.addEventListener("DOMContentLoaded", () => {
+        const email = localStorage.getItem("email");
+        console.log(email);
+        document.getElementById("result-email").innerText = email;
+      });
+    </script>
   </head>
   <body>
-    <main class="container">
+    <main class="main">
       <img src="./assets/images/icon-list.svg" alt="" />
       <h1>Thanks for subscribing!</h1>
       <p>
         A confirmation email has been sent to
-        <span class="email"> ash@loremcompany.com</span>. Please open it and
-        click the button inside to confirm your subscription.
+        <span class="email" id="result-email"> ash@loremcompany.com</span>.
+        Please open it and click the button inside to confirm your subscription.
       </p>
-      <button>Dismiss message</button>
+      <button class="dis-btn">Dismiss message</button>
     </main>
   </body>
 </html>

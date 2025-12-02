@@ -11,6 +11,7 @@ form.addEventListener("submit", (e) => {
   if (result) {
     input.classList.remove("alert");
     valid.style.visibility = "hidden";
+    localStorage.setItem("email", email.value);
     window.location.href = "./success.html";
   } else {
     input.classList.add("alert");
