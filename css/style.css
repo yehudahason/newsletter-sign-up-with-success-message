@@ -170,7 +170,7 @@ form button:hover {
     height: 641px;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 40px;
+    padding: 2rem 2rem 2rem 0.5rem;
     border-radius: 0.8rem;
   }
   .img-div {
@@ -182,7 +182,7 @@ form button:hover {
     object-fit: cover;
   }
   .content {
-    padding: 1rem;
+    padding: 1rem 0;
     gap: 2.5rem;
   }
   .content h1 {
