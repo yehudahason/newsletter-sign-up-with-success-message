@@ -108,7 +108,7 @@ form .input label {
   gap: 0.6rem;
 }
 form input {
-  padding: 12px 15px;
+  padding: 15px;
   border: 1px solid #d1d1d1;
   border-radius: 6px;
   font-size: 14px;
@@ -198,5 +198,10 @@ form button:hover {
   }
   .content h1 {
     font: var(--txt-1);
+  }
+
+  form input,
+  form button {
+    width: 86%;
   }
 }
