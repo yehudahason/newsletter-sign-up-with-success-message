@@ -39,8 +39,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 0.8rem;
-  overflow: hidden;
+  /* border-radius: 0.8rem; */
+  overflow-x: hidden;
   gap: 1.2rem;
 }
 .img-div {
@@ -99,7 +99,7 @@ form .input label {
 }
 .valid {
   color: var(--Red);
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 .input {
   display: flex;
@@ -147,6 +147,7 @@ form button:hover {
     width: 608px;
     height: 878px;
     padding: 40px;
+    border-radius: 0.8rem;
   }
   .img-div {
     width: 528px;
@@ -172,6 +173,7 @@ form button:hover {
     justify-content: space-between;
     /* padding-right: 0; */
     padding: 40px;
+    border-radius: 0.8rem;
   }
   .img-div {
     /* width: 593px; */
