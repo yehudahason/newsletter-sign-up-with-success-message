@@ -9,9 +9,9 @@ form.addEventListener("submit", (e) => {
   const result = emailIsValid(email.value);
 
   if (result) {
-    window.location.href = "./success.html";
     input.classList.remove("alert");
     valid.style.visibility = "hidden";
+    window.location.href = "/success.html";
   } else {
     input.classList.add("alert");
     valid.style.visibility = "visible";
