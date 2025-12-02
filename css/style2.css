@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --Red: hsl(4, 100%, 67%);
+  --Red: rgb(255, 98, 87);
 
   --Blue800: hsl(234, 29%, 20%);
   --Blue700: hsl(235, 18%, 26%);
   --Grey: hsl(0, 0%, 58%);
   --White: hsl(0, 0%, 100%);
   font-size: 16px;
+
+  --txt-1: normal 700 56px/1 "Roboto", sans-serif;
+  --txt-1m: normal 700 40px/1 "Roboto", sans-serif;
+  --txt-2b: normal 700 16px/1.5 "Roboto", sans-serif;
+  --txt-2: normal 400 16px/1.5 "Roboto", sans-serif;
+  --txt-3b: normal 700 12px/1.5 "Roboto", sans-serif;
 }
 * {
   margin: 0;
@@ -16,22 +22,57 @@
 }
 
 body {
-  font-family: "Roboto";
+  font: var(--txt-2);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: var(--Blue700);
 }
 /* Mobile First */
 .container {
   width: 100%;
   height: 100vh;
-  background-color: blue;
+  background-color: var(--White);
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.8rem;
+  padding: 5rem 2rem;
+  overflow: hidden;
+}
+.container img {
+  margin-top: 3rem;
+  height: 50px;
+}
+
+.container h1 {
+  font: var(--txt-1m);
+}
+
+button {
+  background-color: var(--Blue800);
+  color: white;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font: var(--txt-2b);
+  cursor: pointer;
+  margin-top: auto;
+}
+
+button:focus {
+  background: linear-gradient(to right, #ff6a3a, #ff527b);
+  box-shadow: 4px 7px 9px rgba(255, 98, 87, 0.5);
 }
 /* Greatet Then Mobile */
-@media (min-width: 768px) {
+@media (min-width: 608px) {
   .container {
     width: 504px;
     height: 520px;
+    padding: 4rem;
+    justify-content: center;
   }
 }
