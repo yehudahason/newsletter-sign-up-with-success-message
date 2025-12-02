@@ -9,7 +9,7 @@ form.addEventListener("submit", (e) => {
   const result = emailIsValid(email.value);
 
   if (result) {
-    window.location.href = "../success.html";
+    window.location.href = "./success.html";
     input.classList.remove("alert");
     valid.style.visibility = "hidden";
   } else {
