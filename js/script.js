@@ -11,7 +11,7 @@ form.addEventListener("submit", (e) => {
   if (result) {
     input.classList.remove("alert");
     valid.style.visibility = "hidden";
-    window.location.href = "/success.html";
+    window.location.href = "./success.html";
   } else {
     input.classList.add("alert");
     valid.style.visibility = "visible";
