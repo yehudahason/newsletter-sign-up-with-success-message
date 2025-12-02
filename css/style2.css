@@ -41,7 +41,7 @@ body {
   align-items: flex-start;
   gap: 1.8rem;
   padding: 5rem 2rem;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .container img {
   margin-top: 3rem;
