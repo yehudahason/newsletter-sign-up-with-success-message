@@ -67,6 +67,7 @@ p span.email {
   margin-top: auto;
 }
 
+.dis-btn:hover,
 .dis-btn:focus {
   background: linear-gradient(to right, #ff6a3a, #ff527b);
   box-shadow: 4px 7px 9px rgba(255, 98, 87, 0.5);
