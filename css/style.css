@@ -39,6 +39,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  overflow-y: visible;
   gap: 1.2rem;
 }
 .img-div {
@@ -147,6 +148,14 @@ form button:hover {
     height: 878px;
     padding: 40px;
     border-radius: 0.8rem;
+    height: auto; /* remove 100vh */
+    overflow-y: visible; /* allow page to scroll */
+  }
+
+  html,
+  body {
+    height: auto;
+    overflow-y: auto;
   }
   .img-div {
     width: 528px;
