@@ -84,10 +84,11 @@ form {
 }
 .inner-text img {
   height: 1rem;
+  transform: translateY(3px);
 }
 .inner-text p {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 form .input label {
   font: var(--txt-3b);
