@@ -147,7 +147,7 @@ form button:hover {
     width: 608px;
     height: 878px;
     padding: 40px;
-    border-radius: 0.8rem;
+    border-radius: 1.2rem;
     height: auto; /* remove 100vh */
     overflow-y: visible; /* allow page to scroll */
   }
@@ -163,6 +163,7 @@ form button:hover {
   .imgsrc {
     content: url("../assets/images/illustration-sign-up-tablet.svg");
     object-fit: cover;
+    border-radius: 1rem;
   }
   .content {
     padding: 1rem;
@@ -180,7 +181,7 @@ form button:hover {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 2rem 2rem 2rem 0.5rem;
-    border-radius: 0.8rem;
+    border-radius: 1.2rem;
   }
   .img-div {
     height: 100%;
@@ -189,6 +190,7 @@ form button:hover {
     content: url("../assets/images/illustration-sign-up-desktop.svg");
     height: 100%;
     object-fit: cover;
+    border-radius: 1rem;
   }
   .content {
     padding: 1rem 0;
