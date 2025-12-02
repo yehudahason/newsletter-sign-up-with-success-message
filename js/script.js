@@ -1,24 +1,26 @@
-const form = document.getElementById("form");
-const email = document.getElementById("email");
-const input = document.getElementById("input");
-const valid = document.getElementById("valid");
+const formEl = document.getElementById("form");
+const emailEl = document.getElementById("email");
+const inputEl = document.getElementById("input");
+const validEl = document.getElementById("valid");
 
-form.addEventListener("submit", (e) => {
+formEl.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log(email.value);
-  const result = emailIsValid(email.value);
+  const result = emailIsValid(emailEl.value);
 
   if (result) {
-    input.classList.remove("alert");
-    valid.style.visibility = "hidden";
-    localStorage.setItem("email", email.value);
+    inputEl.classList.remove("alert");
+    validEl.style.visibility = "hidden";
+    // SENT EMAIL TO LOCALSTORAGE
+    localStorage.setItem("email", emailEl.value);
     window.location.href = "./success.html";
   } else {
-    input.classList.add("alert");
-    valid.style.visibility = "visible";
+    // ALERT
+    inputEl.classList.add("alert");
+    validEl.style.visibility = "visible";
   }
 });
 
+// SIMPLE EMAIL REGEX CHECK  https://ui.dev/validate-email-address-javascript
 function emailIsValid(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
