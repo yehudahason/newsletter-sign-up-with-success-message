@@ -6,7 +6,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Links
 
-- Live Site: [GitHub Pages](https://yehudahason.github.io/newsletter-sign-up-with-success-message/)
+- My solution at : [GitHub Pages](https://yehudahason.github.io/newsletter-sign-up-with-success-message/)
 
 ### Built with
 
